@@ -1,1 +1,1 @@
-This basic project is intended to help increase my knowledge of HTML, CSS, and the use of Git. 
+This basic project is intended to help increase my knowledge of HTML, CSS, and the use of Git. Specifically, how elements get placed on the page and roughly how they get styled and aligned.  
