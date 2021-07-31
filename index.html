@@ -4,51 +4,46 @@
 
     <head>
 
+        <title>Google Homepage</title>
+
         <style>
-            
-            
-            .googleLogo {
-               margin:auto; 
-               width: 50%;
-               padding: 10px;
+            #googleLogo {
+                /* center the logo using grid */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
             }
             
+           
+            
             .searchBox {
-                margin-left: auto;
-                margin-right: auto;
-                width: 40%;
-                padding: 10px;
-
-                }
+                /* center the searchbox underneath the logo */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
 
             
             .searchButtons {
-                margin: auto;
-                width: 50%;
-                padding: 40px;
-
+                /* center-align the buttons underneath the search box */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
             }
             
-            
+           
         </style>
 
     </head>
 
     <body>
         
-              
-        <div class="grid-container">
-            <!-- Attempt to horizontally-align logo to the viewport -->
-            
-        </div>
-        
-        <div class="googleLogo">
-            <img src="images/google_logo.png" alt="google logo" width="auto" height="auto">
-        </div>
+       <div id="googleLogo">
+            <img src="images/google_logo.png" alt="google logo">
+       </div>
 
         <div class="searchBox">     
-            
-            
+           <!-- google searchbox -->
             <form>
                 <input >
             </form>
