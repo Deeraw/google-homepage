@@ -12,15 +12,21 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                margin-top: 10em;
             }
             
-           
-            
-            .searchBox {
-                /* center the searchbox underneath the logo */
+            #searchBox {
+               /*center the searchbox undeneath the logo */
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                
+           }
+             
+            input[type=text] {
+                /* center increase the width of the searchbox */
+               width: 30em;
+               margin-bottom: 10px;
             }
 
             
@@ -29,8 +35,11 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
+                margin-right: auto;
+                
             }
             
+         
            
         </style>
 
@@ -38,18 +47,18 @@
 
     <body>
         
-       <div id="googleLogo">
+        <div id="googleLogo">
+           <!-- logo -->
             <img src="images/google_logo.png" alt="google logo">
-       </div>
+        </div>
 
-        <div class="searchBox">     
+        <div id="searchBox" display="flex" flex-direction="row" justify-content="center">     
            <!-- google searchbox -->
-            <form>
-                <input >
-            </form>
+            <input type="text"> 
         </div>
         
         <div class="searchButtons">
+            <!-- search buttons -->
             <button type="button">Google Search</button>
             <button type="button">I'm Feeling Lucky</button> 
 
