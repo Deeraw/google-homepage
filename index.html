@@ -1,84 +1,65 @@
 <!DOCTYPE html>
-
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-
     <head>
-
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Google Homepage</title>
-
-        <style>
-            #googleLogo {
-                /* center the logo using grid */
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                margin-top: 10em;
-            }
-            
-            #searchBox {
-               /*center the searchbox undeneath the logo */
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                
-           }
-             
-            input[type=text] {
-                /* center increase the width of the searchbox */
-               width: 30em;
-               margin-bottom: 10px;
-            }
-
-            
-            .searchButtons {
-                /* center-align the buttons underneath the search box */
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                margin-right: auto;
-                
-            }
-            
-         
-           
-        </style>
-
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet"> 
     </head>
-
+<!-- Start body-->
     <body>
-        
-        <div id="googleLogo">
-           <!-- logo -->
-            <img src="images/google_logo.png" alt="google logo">
+       <nav>
+        <div class="nav-container">
+           <div class="left-nav">
+                <a href="">About</a>
+                <a href="">Store</a>
+            </div>
+
+            <div class="right-nav">
+                <a href="">Gmail</a>
+                <a href="">Images</a>
+                <!-- apps Icon-->
+                <a href="">Sign in</a>
+            </div>
+        </div>
+       </nav>
+<!-- End nav -->
+
+<div class="googleLogo">
+    <img src="/images/google_logo.png" alt="google logo">
+</div>
+
+<div class="searchBarContainer">
+    <input type="search" id="googleSearchBar">
+</div>
+
+<div class="buttons">
+    <input type="submit" value="Google Search" id="googleSearchButton">
+    <input type="submit" value="I'm Feeling Lucky" id="IFLbutton">
+</div>
+
+<!--Begin footer -->
+       <footer>
+        <div class="left-foot">
+           <a href="">Advertising</a>
+           <a href="">Business</a>
+           <a href="">How Search works</a>
         </div>
 
-        <div id="searchBox" display="flex" flex-direction="row" justify-content="center">     
-           <!-- google searchbox -->
-            <input type="text"> 
+        <div class="right-foot">
+           <a href="">Privacy</a>
+           <a href="Terms">Terms</a>
+           <a href="">Settings</a>
         </div>
-        
-        <div class="searchButtons">
-            <!-- search buttons -->
-            <button type="button">Google Search</button>
-            <button type="button">I'm Feeling Lucky</button> 
-
-        </div>
-
-        <p>About</p>
-        <p>Store</p>
-
-        <p>Gmail</p>
-        <p>Images</p>
-
-        <button type="submit">Sign In</button>
-
-        <p>Advertising</p>
-        <p>Business</p>
-        <p>How Search works</p>
-
-        <p>Privacy</p>
-
-
+       </footer>
     </body>
-
 </html>
